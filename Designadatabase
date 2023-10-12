@@ -1,0 +1,45 @@
+CREATE TABLE Store (ID INTEGER PRIMARY KEY, Food_Type TEXT, Price INTEGER, Stock INTEGER, Animal TEXT);
+
+INSERT INTO Store VALUES (1, " Dry", 5, 3, "Dog");
+
+INSERT INTO Store VALUES (2, "Wet", 1, 6, "Cat" );
+
+INSERT INTO Store VALUES (3, "Wet", 4, 8, "Dog");
+
+INSERT INTO Store VALUES (4, "Dry", 4, 7, "Dog");
+
+INSERT INTO Store VALUES (5, "Dry", 4, 6, "CAT");
+
+INSERT INTO Store VALUES (6, "Dry", 5, 6, "Cat");
+
+INSERT INTO Store VALUES (7, "Dry", 5, 6, "Dog");
+
+INSERT Into Store VALUES (8, "Wet", 6, 2, "Fish");
+
+INSERT INTO Store VALUES (9, "Flake", 7,3, "Fish");
+
+INSERT INTO Store VALUES (10, "Flake", 5, 5, "Crab");
+
+INSERT INTO Store VALUES (11, "Wet", 4, 6, "Dog");
+
+INSERT INTO Store VALUES (12, "Dry", 3, 6, "Cat");
+
+INSERT INTO Store VALUES (13, "Wet", 6, 7, "Fish");
+
+INSERT INTO Store VALUES (14, "Wet", 6, 1, "Cat");
+
+INSERT INTO Store VALUES (15, "Dry", 6,2, "Dog");
+
+SELECT MAX(price) FROM Store ORDER BY price;
+
+
+
+
+
+
+
+
+
+
+
+
