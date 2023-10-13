@@ -1,0 +1,17 @@
+/* What does the app's SQL look like? */
+
+CREATE TABLE health_app 
+    (id INTEGER PRIMARY KEY,
+    month TEXT,
+    average_heart_rate INTEGER,
+    exercise_amount INTEGER);
+
+INSERT INTO health_app VALUES (1, "January", 65, 60);
+INSERT INTO health_app VALUES (2, "February", 64,67);
+INSERT INTO health_app VALUES (3, "MARCH", 63, 45);
+
+UPDATE health_app SET month = "April" WHERE id=2;
+SELECT * FROM health_app;
+
+DELETE FROM health_app WHERE Id = 3;
+SELECT * FROM health_app;
