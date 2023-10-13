@@ -1,0 +1,30 @@
+CREATE TABLE famous_people 
+    (Id INTEGER PRIMARY KEY,
+    First_name TEXT,
+    Last_Name TEXT);
+    
+INSERT INTO famous_people VALUES (1, "Angelina", "Jolie");
+INSERT INTO famous_people VALUES (2, "Brad", "Pitt");
+INSERT INTO famous_people VALUES (3, "Kristen", "Stewart");
+INSERT INTO famous_people VALUES (4, "Julianne","Hugh");
+
+CREATE TABLE stars_in_movies
+    (id INTEGER PRIMARY KEY,
+    First_name TEXT,
+    Last_name TEXT,
+    movie_name TEXT);
+    
+INSERT INTO stars_in_movies VALUES (1, "Angelina", "Jolie", "Mr. and Mrs. Smith");
+INSERT INTO stars_in_movies VALUES (2, "Brad", "Pitt", "Mr. and Mrs. Smith");
+INSERT INTO stars_in_movies VALUES (3, "Kristen", "Stewart", "Twilight");
+INSERT INTO stars_in_movies VALUES (4, "Julianne", "Hugh", "Footloose");
+
+SELECT famous_people.first_name, famous_people.last_name, movie_name as Movie
+    FROM famous_people 
+    JOIN stars_in_movies 
+    ON famous_people.id = stars_in_movies.id;
+
+    
+
+    
+    
